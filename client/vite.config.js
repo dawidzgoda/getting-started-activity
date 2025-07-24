@@ -4,6 +4,7 @@ import {defineConfig} from 'vite';
 export default defineConfig({
   envDir: '../',
   server: {
+    allowedHosts:["localhost", "tiles-ram-garage-mud.trycloudflare.com"],
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
